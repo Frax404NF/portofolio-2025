@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frandi Andika - Software Engineer & Computer Science Student. Specialized in web development, passionate about creating innovative digital solutions."
+    />
+    <meta name="author" content="Frandi Andika" />
+    <meta name="keywords" content="Software Engineer, Web Development, Computer Science, Frontend, Backend, Node.js, JavaScript" />
+    <title>Frandi Andika - Software Engineer</title>
+    <!-- Critical CSS Inline (Minified) -->
+    <style>:root{--primary-color:#2563eb;--background-color:#fff;--text-primary:#1e293b;--border-radius:.5rem;--transition:all .3s ease}[data-theme=dark]{--background-color:#0f172a;--text-primary:#f8fafc}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:var(--text-primary);background-color:var(--background-color);overflow-x:hidden;width:100%}.navbar{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);z-index:1000;min-height:60px}[data-theme=dark] .navbar{background:rgba(15,23,42,.95)}.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;position:relative}.hero-container{position:relative;z-index:2;width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.hero-title{font-size:3.5rem;font-weight:700;line-height:1.1;margin-bottom:1rem}.hero-subtitle{font-size:1.5rem;font-weight:500;margin-bottom:1.5rem;color:#e2e8f0}.hero-description{font-size:1.1rem;line-height:1.7;margin-bottom:2.5rem;max-width:600px;opacity:.9}@media (max-width:768px){.hero-title{font-size:2.5rem}.hero-subtitle{font-size:1.3rem}.hero-description{font-size:1rem}}</style>
+    
+    <!-- Main CSS - Non-blocking -->
+    <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/index.css"></noscript>
+    <!-- Favicon -->
+    <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/foto_penulis.jpg">
+    <!-- Custom Icon Font - Only used icons -->
+    <style>
+      /* Custom minimal icon font - replaces Font Awesome */
+      .icon { display: inline-block; font-style: normal; }
+      .fab { font-family: "Font Awesome 6 Brands"; }
+      .fas { font-family: "Font Awesome 6 Free"; font-weight: 900; }
+    </style>
+
+    <!-- Font Awesome subset -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="image/foto_penulis.jpg" as="image">
+    <link rel="preload" href="image/about_me.jpg" as="image">
+  </head>
+  <body class="loading">
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Loading...</div>
+      </div>
+    </div>
+
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <span class="brand-text">Frandi Andika</span>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                <span class="greeting">Turning Coffee into Code since 2020</span>
+                <span class="name">I'm Frandi Andika</span>
+              </h1>
+              <h2 class="hero-subtitle">Software Engineer specializing in <span class="accent-text">Frontend</span> & <span class="accent-text">Backend Development</span></h2>
+              <p class="hero-description">
+                Building scalable web applications with clean code and modern technologies.
+                Fresh graduate from <strong>Universitas Sam Ratulangi</strong>.
+              </p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                  <span>Explore My Work</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <span>Let's Connect</span>
+                  <i class="fas fa-paper-plane"></i>
+                </a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="image/foto_penulis.jpg" alt="Frandi Andika" class="profile-img" width="300" height="300">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Computer Science graduate with a passion for building full-stack web applications. 
+                I focus on writing clean, maintainable code and creating
+                solutions that solve real problems.
+              </p>
+              <p>
+                Graduated <span class="highlight-stat">top 10%</span> from Bangkit Academy's Cloud Computing track
+                (selected from 57,000+ applicants). Completed internships at Telkom Indonesia and PT. Mekar Investama Teknologi,
+                working on full-stack development and cloud infrastructure.
+              </p>
+              <p>
+                When I'm not coding, I enjoy hiking and trail running in the mountains.
+              </p>
+            </div>
+            <div class="about-image">
+              <img src="image/about_me.jpg" alt="Developer workspace" class="about-img" width="400" height="300">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Tools and technologies I work with</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-js-square"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.049-.106.005-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"/></svg>
+                  <span>Next.js</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-wind"></i>
+                  <span>Tailwind</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-server"></i>
+                  <span>REST API</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-bolt"></i>
+                  <span>Supabase</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>Redis</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & DevOps</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-docker"></i>
+                  <span>Docker</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-google"></i>
+                  <span>Google Cloud</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-tools"></i>
+                  <span>Postman</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-atlassian"></i>
+                  <span>Jira</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-slack"></i>
+                  <span>Slack</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-code"></i>
+                  <span>VS Code</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-linux"></i>
+                  <span>Linux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Professional journey and achievements</p>
+          </div>
+          <div class="timeline">
+            <!-- Telkom Indonesia -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="experience-header">
+                  <h3 class="company-name">Telkom Indonesia</h3>
+                  <div class="position-info">
+                    <h4 class="position-title">Programming Intern</h4>
+                    <span class="duration">September 2024 - December 2024 (4 months)</span>
+                  </div>
+                </div>
+                <div class="experience-highlight">
+                  <p class="highlight-text">Selected from 64,000+ applicants across Indonesia (MSIB Batch 7)</p>
+                </div>
+                <ul class="experience-details">
+                  <li>Website Management: Gained experience in managing WordPress-based websites, including optimizing the design, integrating plugins, and testing features</li>
+                  <li>Time Management: Improved the ability to manage time effectively to complete tasks efficiently</li>
+                  <li>Communication & Teamwork: Enhanced communication skills through coordination with mentors and stakeholders, particularly in presenting ideas and receiving feedback</li>
+                  <li>Problem-Solving: Developed a systematic approach to analyzing technical issues and identifying effective solutions</li>
+                  <li>Adaptability to Change: Strengthened the ability to quickly adapt to shifting priorities and evolving requirements</li>
+                </ul>
+                <div class="experience-overlay">
+                  <div class="experience-links">
+                    <a href="https://drive.google.com/file/d/1ntZOwapZGfHStuGExNCgi3hBYL0Rk2X2/view?usp=sharing" class="experience-link" target="_blank" title="Telkom Certificate">
+                      <i class="fas fa-certificate"></i>
+                      <span>Certificate</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/frandi-andika/details/experience/" class="experience-link" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span>Details</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Digistar Club by Telkom Indonesia -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="experience-header">
+                  <h3 class="company-name">Digistar Club by Telkom Indonesia</h3>
+                  <div class="position-info">
+                    <h4 class="position-title">Mentee as Hacker Front End Digistar Class 2024</h4>
+                    <span class="duration">August 2024 - October 2024 (3 months)</span>
+                  </div>
+                </div>
+                <div class="experience-highlight">
+                  <p class="highlight-text">Selected from 12,000+ candidates</p>
+                </div>
+                <ul class="experience-details">
+                  <li>Successfully secured a mentee position in a highly selective national program organized by Telkom Indonesia</li>
+                  <li>Completed comprehensive training modules focused on enhancing soft skills, including leadership principles, strategic communication, personal branding, and career preparation</li>
+                  <li>Acquired hands-on experience in modern web development using React.js, mastering fundamental principles including component-based architecture, state management, client-side routing, and component lifecycle with Hooks</li>
+                </ul>
+                <div class="experience-overlay">
+                  <div class="experience-links">
+                    <a href="https://www.linkedin.com/in/frandi-andika/details/experience/" class="experience-link" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span>Details</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bangkit Academy -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="experience-header">
+                  <h3 class="company-name">Bangkit Academy</h3>
+                  <div class="position-info">
+                    <h4 class="position-title">Cloud Computing Cohort at Bangkit Academy</h4>
+                    <span class="duration">February 2024 - July 2024 (6 months)</span>
+                  </div>
+                </div>
+                <div class="experience-highlight">
+                  <p class="highlight-text">Led by Google, Tokopedia, Gojek, & Traveloka</p>
+                </div>
+                <ul class="experience-details">
+                  <li>Selected as one of 4,650 students from over 57,000 applicants across Indonesia</li>
+                  <li>Graduated as top 10% with distinction graduate</li>
+                  <li>Volunteer to lead and sharing in multiple study group sessions</li>
+                  <li>Learn how to use and implement best practices for the Google Cloud Platform</li>
+                  <li>Get the opportunity to be one of the 1,000 Most Active Students in the ILT session (Tech and Soft Skills)</li>
+                </ul>
+                <div class="experience-overlay">
+                  <div class="experience-links">
+                    <a href="https://grow.google/intl/id_id/bangkit/" class="experience-link" target="_blank">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>Program</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1yK8pXNswXeWGqHos7xp81_6YxO3vwNyE/view?usp=sharing" class="experience-link" target="_blank" title="Bangkit Certificate">
+                      <i class="fas fa-certificate"></i>
+                      <span>Certificate</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/frandi-andika/details/experience/" class="experience-link" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span>Details</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Braincore.id Cloud Engineer -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="experience-header">
+                  <h3 class="company-name">Braincore.id</h3>
+                  <div class="position-info">
+                    <h4 class="position-title">Cloud Engineer</h4>
+                    <span class="duration">April 2024 - June 2024 (3 months)</span>
+                  </div>
+                </div>
+                <div class="experience-highlight">
+                  <p class="highlight-text">Project-Based Internship - Driver Monitoring System (DMS)</p>
+                </div>
+                <ul class="experience-details">
+                  <li>Collaborated with a 6-person team to develop an IoT-based Driver Monitoring System (DMS) using an ESP32 CAM microcontroller</li>
+                  <li>Integrated various sensors (MQ-7 CO, MPU6050 gyroscope, MLX90614 IR thermometer) and communicated via HTTP to enhance driver safety through face and object detection models</li>
+                  <li>Developed a dashboard using React for real-time driver monitoring</li>
+                  <li>Assisted in the deployment process, specifically utilizing Cloud Run and setting up virtual machines for seamless hardware communication with APIs</li>
+                  <li>Ensured robust and efficient integration of hardware and software components to achieve optimal performance and reliability</li>
+                </ul>
+                <div class="experience-overlay">
+                  <div class="experience-links">
+                    <a href="https://braincore.id" class="experience-link" target="_blank">
+                      <i class="fas fa-external-link-alt"></i>
+                      <span>Company</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/frandi-andika/details/experience/" class="experience-link" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span>Details</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MEKAR Full Stack Engineer -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="experience-header">
+                  <h3 class="company-name">MEKAR - PT. Mekar Investama Teknologi</h3>
+                  <div class="position-info">
+                    <h4 class="position-title">Full Stack Engineer</h4>
+                    <span class="duration">October 2023 - January 2024 (4 months)</span>
+                  </div>
+                </div>
+                <ul class="experience-details">
+                  <li>Gain knowledge in collaborating with a team as well as two-way communication skills</li>
+                  <li>Actively involved in developing RESTful APIs that support interaction with JIRA and Google Cloud platforms, using Django</li>
+                  <li>Leveraged Docker compose for container and environment configuration, used GitLab for efficient collaboration</li>
+                </ul>
+                <div class="experience-overlay">
+                  <div class="experience-links">
+                    <a href="https://mekar.id/" class="experience-link" target="_blank">
+                      <i class="fas fa-external-link-alt"></i>
+                      <span>Company</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/frandi-andika/details/experience/" class="experience-link" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span>Details</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teaching Assistant -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="experience-header">
+                  <h3 class="company-name">Universitas Sam Ratulangi</h3>
+                  <div class="position-info">
+                    <h4 class="position-title">Teaching Assistant - Algorithms and Programming</h4>
+                    <span class="duration">August 2023 - October 2023 (3 months)</span>
+                  </div>
+                </div>
+                <ul class="experience-details">
+                  <li>Coordinate and share tasks with other teaching assistants</li>
+                  <li>Help lecturers supervise students during practicum</li>
+                  <li>Helps students understand the basics of algorithms and programming such as loops, functions, and OOP</li>
+                </ul>
+                <div class="experience-overlay">
+                  <div class="experience-links">
+                    <a href="https://www.linkedin.com/in/frandi-andika/details/experience/" class="experience-link" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span>Details</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Real-world solutions with measurable impact — from cloud infrastructure to full-stack applications</p>
+          </div>
+          
+          <!-- Project Filters -->
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Asclepius Cancer Detection API -->
+            <div class="project-card" data-category="fullstack backend">
+              <div class="project-image">
+                <img src="image/asclepius-project.png" alt="Asclepius Cancer Detection" loading="lazy">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/Frax404NF/Asclepius-dicoding-project/blob/master/docs/docs-API.md" class="project-link" title="API Documentation" target="_blank">
+                      <i class="fas fa-book"></i>
+                    </a>
+                    <a href="https://github.com/Frax404NF/Asclepius-dicoding-project" class="project-link" title="View Code" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Asclepius Cancer Detection API</h3>
+                </div>
+                <p class="project-description">
+                  ML-powered REST API for skin cancer detection using TensorFlow and Google Cloud Platform.
+                  Features image upload, prediction processing, and health recommendations.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Google Cloud</span>
+                  <span class="tech-tag">TensorFlow</span>
+                  <span class="tech-tag">Cloud Run</span>
+                  <span class="tech-tag">Firestore</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Driver Monitoring System -->
+            <div class="project-card" data-category="fullstack backend">
+              <div class="project-image">
+                <img src="image/dms.png" alt="Driver Monitoring System" loading="lazy">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://www.linkedin.com/posts/frandi-andika_c241-ms02-activity-7214292277932802048-HNmu" class="project-link" title="View Details" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Frax404NF" class="project-link" title="View Profile" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Driver Monitoring System (DMS)</h3>
+                </div>
+                <p class="project-description">
+                  IoT system for driver drowsiness detection using ESP32 CAM, computer vision, and sensors.
+                  Built with React dashboard and deployed on Google Cloud. Bangkit Academy capstone project.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Google Cloud</span>
+                  <span class="tech-tag">IoT</span>
+                  <span class="tech-tag">Machine Learning</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Attendance System API -->
+            <div class="project-card" data-category="backend">
+              <div class="project-image">
+                <img src="image/back-end-pic.jpg" alt="Attendance System API" loading="lazy">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/Frax404NF/attendance-system-api/blob/master/README.md" class="project-link" title="API Documentation" target="_blank">
+                      <i class="fas fa-book"></i>
+                    </a>
+                    <a href="https://github.com/Frax404NF/attendance-system-api" class="project-link" title="View Code" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Employee Attendance System API</h3>
+                </div>
+                <p class="project-description">
+                  Enterprise-level REST API with Redis caching, Bull message queues for background jobs,
+                  and real-time attendance tracking. Built with clean architecture principles.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Bull Queue</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bookshelf API -->
+            <div class="project-card" data-category="backend">
+              <div class="project-image">
+                <img src="image/back-end-pic.jpg" alt="Bookshelf API" loading="lazy">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/Frax404NF/Bookshelf-API-Fixed/blob/master/README.md" class="project-link" title="API Documentation">
+                      <i class="fas fa-book"></i>
+                    </a>
+                    <a href="https://github.com/Frax404NF/Bookshelf-API-Fixed" class="project-link" title="View Code" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Bookshelf API</h3>
+                </div>
+                <p class="project-description">
+                  RESTful API for bookshelf management with full CRUD operations, book validation,
+                  and reading status tracking.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">REST API</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- URL Analytics Project -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-image">
+                <img src="image/url-analytics.png" alt="URL Analytics Project" loading="lazy">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://www.linkedin.com/posts/frandi-andika_url-analytics-project-activity-7246383976804720640-BfCW" class="project-link" title="View Details" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Frax404NF" class="project-link" title="View Code" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>URL Analytics Platform</h3>
+                </div>
+                <p class="project-description">
+                  Web application for URL shortening with QR code generation and analytics tracking.
+                  Built during internship at Braincore.id.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">Tailwind</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bakoding Website -->
+            <div class="project-card" data-category="frontend">
+              <div class="project-image">
+                <img src="image/bakoding.png" alt="Bakoding Website" loading="lazy">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://bakoding.vercel.app/" class="project-link" title="View Live Demo" target="_blank">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/Frax404NF/Belajar-Dasar-Pemrograman-Web-Submission" class="project-link" title="View Code" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Bakoding Website</h3>
+                </div>
+                <p class="project-description">
+                  Responsive educational website with clean HTML5 structure and modern CSS styling.
+                  Deployed on Vercel.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- React Jobs Platform -->
+            <div class="project-card" data-category="frontend">
+              <div class="project-image">
+                <img src="https://github.com/user-attachments/assets/bfc9bad2-8a90-4b7a-8587-4b73e13d54d3" alt="React Jobs" loading="lazy">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#" class="project-link" title="View Live Demo">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/Frax404NF/React-Jobs" class="project-link" title="View Code" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>React Jobs Platform</h3>
+                </div>
+                <p class="project-description">
+                  Job listing application built with React and Tailwind CSS. Features job browsing,
+                  detailed views, and posting functionality.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Vite</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and work together</p>
+          </div>
+          <div class="contact-content-simple">
+            <div class="contact-info-centered">
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Education</h4>
+                    <p>Universitas Sam Ratulangi</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Location</h4>
+                    <p>Manado, North Sulawesi, Indonesia<br>
+                    <span style="color: var(--primary-color); font-weight: 500;">Available for Remote Work</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="social-links-large">
+                <a href="https://github.com/Frax404NF" class="social-link-large" target="_blank" title="GitHub">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/frandi-andika-30a505260/" class="social-link-large" target="_blank" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="mailto:frandicollage21@gmail.com" class="social-link-large" title="Send Email">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Frandi Andika. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Theme Toggle -->
+    <button class="theme-toggle-floating" aria-label="Toggle theme">
+      <i class="fas fa-sun" id="theme-icon"></i>
+    </button>
+
+    <script src="js/index.js" defer></script>
+  </body>
+</html>
