@@ -681,6 +681,14 @@ function initPerformanceMonitoring() {
   }
 }
 
+// Update footer year dynamically
+function updateFooterYear() {
+  const yearElement = document.getElementById('current-year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+}
+
 // Resource preloading
 function preloadCriticalResources() {
   // Preload critical CSS
@@ -705,6 +713,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initPageLoader();
   initLazyLoading();
   initPerformanceMonitoring();
+  updateFooterYear();
 });
 
 // Preload images after initial load
