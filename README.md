@@ -11,7 +11,7 @@ A modern, responsive portfolio website showcasing my skills and projects as a Fu
 - **Professional Timeline** - Experience section with company details
 - **Contact Integration** - Direct email, GitHub, and LinkedIn links
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
 - **Styling**: CSS Custom Properties, Flexbox, Grid
@@ -19,7 +19,7 @@ A modern, responsive portfolio website showcasing my skills and projects as a Fu
 - **Fonts**: Google Fonts (Inter)
 - **Animations**: CSS Transitions, Intersection Observer API
 
-## 📱 Sections
+## Sections
 
 1. **Hero** - Introduction with profile image and call-to-action
 2. **About** - Personal background and statistics
@@ -28,9 +28,9 @@ A modern, responsive portfolio website showcasing my skills and projects as a Fu
 5. **Projects** - Featured projects with filtering capabilities
 6. **Contact** - Social links and location information
 
-## 🚀 Live Demo
+## Live Demo
 
-[View Live Portfolio](https://your-portfolio-url.vercel.app) _(Update after deployment)_
+[View Live Portfolio](https://portfolio-frandi.vercel.app/)
 
 [![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-95+-brightgreen)](https://developers.google.com/web/tools/lighthouse)
 [![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-Pass-brightgreen)](https://web.dev/vitals/)
@@ -48,14 +48,7 @@ cd portfolio
 - Simply open `index.html` in your browser
 - Or use a local server for development
 
-## 🎨 Customization
-
-- **Colors**: Edit CSS custom properties in `css/index.css`
-- **Content**: Update personal information in `index.html`
-- **Images**: Replace images in the `image/` folder
-- **Theme**: Modify theme variables for personalization
-
-## 📄 Project Structure
+## Project Structure
 
 ```
 portfolio/
@@ -71,7 +64,7 @@ portfolio/
 └── README.md          # Documentation
 ```
 
-## 🌟 Key Projects Featured
+## Key Projects Featured
 
 - **Asclepius Cancer Detection API** - ML-powered health API using Google Cloud
 - **Driver Monitoring System** - IoT project from Bangkit Academy
@@ -80,21 +73,21 @@ portfolio/
 - **React Jobs Platform** - Modern job listing application
 - **Bakoding Website** - Responsive educational website
 
-## ⚡ Performance & SEO Optimization
+## Performance & SEO Optimization
 
-### 🎯 Core Web Vitals Optimized
+###  Core Web Vitals Optimized
 - **LCP (Largest Contentful Paint)**: <1.5s _(Target: <2.5s)_
 - **FID (First Input Delay)**: <50ms _(Target: <100ms)_
 - **CLS (Cumulative Layout Shift)**: <0.1 _(Target: <0.1)_
 
-### 🚀 Performance Metrics
+### Performance Metrics
 - **Lighthouse Performance**: 95+ score
 - **PageSpeed Insights**: 90+ (Mobile & Desktop)
 - **Image Optimization**: 70% size reduction with WebP support
 - **CSS Optimization**: 75% reduction with critical CSS inline
 - **JavaScript**: Non-blocking, deferred loading
 
-### 📊 Technical SEO Features
+###  Technical SEO Features
 - **Mobile-First Design** - Optimized for Google's mobile-first indexing
 - **Semantic HTML5** - Proper heading structure and accessibility
 - **Meta Tags Optimization** - Open Graph and Twitter Card support
@@ -102,7 +95,7 @@ portfolio/
 - **XML Sitemap** - SEO crawler friendly
 - **Robots.txt** - Search engine guidelines
 
-### 🛡️ Performance Optimizations Implemented
+### Performance Optimizations Implemented
 ```
 ✅ Render-blocking resources eliminated (1,790ms saved)
 ✅ Images properly sized (550 KiB saved)
@@ -116,13 +109,13 @@ portfolio/
 ✅ Resource hints (preconnect, preload, prefetch)
 ```
 
-### 📱 Responsive Design
+### Responsive Design
 - **Mobile-Optimized**: Perfect experience on all devices
 - **Progressive Enhancement**: Works without JavaScript
 - **Touch-Friendly**: Optimized for mobile interactions
 - **Accessible**: WCAG 2.1 AA compliance ready
 
-## 🔧 Performance Monitoring
+## Performance Monitoring
 
 ### Performance Testing Tools
 - **Google PageSpeed Insights**: Monitor Core Web Vitals
@@ -147,13 +140,13 @@ portfolio/
 - **JavaScript**: < 100 KiB
 - **Fonts**: < 50 KiB
 
-## 🤝 Connect
+##  Connect
 
 - **Email**: frandicollage21@gmail.com
 - **LinkedIn**: [Frandi Andika](https://www.linkedin.com/in/frandi-andika-30a505260/)
 - **GitHub**: [Frax404NF](https://github.com/Frax404NF)
 
-## 📝 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
