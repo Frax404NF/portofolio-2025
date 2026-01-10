@@ -2367,3 +2367,64 @@ footer {
     transform: translateY(-5px);
   }
 }
+/* Featured Project Styles */
+.project-card.featured {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.2);
+  position: relative;
+}
+
+.project-card.featured::before {
+  content: ' Featured';
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 10;
+}
+
+[data-theme="dark"] .project-card.featured {
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+}
+
+.hki-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.project-stats {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .project-stats {
+  border-top-color: rgba(255,255,255,0.1);
+}
+
+.project-stats span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-stats i {
+  color: var(--primary-color);
+}
+
