@@ -377,9 +377,12 @@ img[loading="lazy"].loaded {
   color: #e2e8f0;
 }
 
-[data-theme="dark"] .skill-item i,
-[data-theme="dark"] .skill-item svg {
-  color: var(--primary-light);
+[data-theme="dark"] .skill-item i {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .skill-item svg[fill="currentColor"] {
+  color: #e2e8f0;
 }
 
 [data-theme="dark"] .skill-item:hover {
@@ -387,8 +390,11 @@ img[loading="lazy"].loaded {
   color: #ffffff;
 }
 
-[data-theme="dark"] .skill-item:hover i,
-[data-theme="dark"] .skill-item:hover svg {
+[data-theme="dark"] .skill-item:hover i {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .skill-item:hover svg[fill="currentColor"] {
   color: #ffffff;
 }
 
@@ -841,12 +847,23 @@ img[loading="lazy"].loaded {
   font-size: 1.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--primary-color);
   transition: var(--transition);
 }
 
-.skill-item:hover i,
-.skill-item:hover svg {
+.skill-item i {
+  color: var(--text-primary);
+}
+
+/* Apply color to skill SVGs using currentColor */
+.skill-item svg[fill="currentColor"] {
+  color: var(--text-primary);
+}
+
+.skill-item:hover i {
+  color: white;
+}
+
+.skill-item:hover svg[fill="currentColor"] {
   color: white;
 }
 

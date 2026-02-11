@@ -421,9 +421,9 @@ function initThemeToggle() {
 function updateThemeIcon(theme) {
   if (themeIcon) {
     if (theme === 'dark') {
-      themeIcon.className = 'fas fa-moon';
-    } else {
       themeIcon.className = 'fas fa-sun';
+    } else {
+      themeIcon.className = 'fas fa-moon';
     }
   }
 }
